@@ -1,15 +1,15 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
+    es2020: true
   },
   extends: ['plugin:react/recommended', 'airbnb'],
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
-    ecmaVersion: 12,
-    sourceType: 'module',
+    ecmaVersion: 11,
+    sourceType: 'module'
   },
   plugins: ['react', 'react-hooks'],
   rules: {},
@@ -17,8 +17,8 @@ module.exports = {
     {
       files: ['**/*.test.js', '**/*.test.jsx'],
       env: {
-        jest: true,
-      },
-    },
-  ],
-};
+        jest: true
+      }
+    }
+  ]
+}
